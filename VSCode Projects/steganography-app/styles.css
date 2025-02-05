@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e2e;
+    color: white;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+button {
+    background: #ffcc00;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+#download-link {
+    display: block;
+    margin-top: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+}

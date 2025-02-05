@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Steganography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <h1>Welcome to Graphy</h1>
+        <button onclick="showSelectionScreen()">Get Started</button>
+    </div>
+
+    <!-- Selection Screen -->
+    <div id="selection-screen" class="hidden">
+        <h2>Select an Option</h2>
+        <button onclick="showEncodeScreen()">Encrypt</button>
+        <button onclick="showDecodeScreen()">Decrypt</button>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Steganography Type Selection -->
+    <div id="stego-type-screen" class="hidden">
+        <h2>Select File Type</h2>
+        <button onclick="showFileScreen('text')">Text File</button>
+        <button onclick="showFileScreen('image')">Image File</button>
+        <button onclick="showFileScreen('video')">Video File</button>
+        <button onclick="goBackToSelection()">Back</button>
+    </div>
+
+    <!-- Encode/Decode Screen -->
+    <div id="file-screen" class="hidden">
+        <h2 id="action-title"></h2>
+        <div id="encrypt-fields">
+            <input type="text" id="text-input" placeholder="Enter text to encrypt">
+        </div>
+        <input type="number" id="shift-value" placeholder="Enter Caesar Cipher Shift" min="1" max="25">
+        <input type="file" id="file-upload">
+        <button onclick="processFile()">Process</button>
+        <a id="download-link" download="processed_file">Download File</a>
+        <button onclick="goBackToTypeSelection()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

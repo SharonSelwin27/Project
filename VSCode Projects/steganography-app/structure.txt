@@ -1,0 +1,10 @@
+steganography-app/
+├── app.py               # Flask Backend (Python)
+├── static/
+│   ├── css/
+│   │   └── style.css    # CSS File
+│   └── js/
+│       └── app.js       # JavaScript File
+├── templates/
+│   └── index.html       # HTML File
+└── requirements.txt     # Python dependencies
